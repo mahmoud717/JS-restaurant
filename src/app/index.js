@@ -2,8 +2,14 @@ import '../assets/style/main.scss';
 import switchToHome from './utils/home';
 import switchToMenu from './utils/menu';
 import switchToContacts from './utils/contacts';
+import nav from './utils/nav';
+import tabs from './utils/tabs';
+import footer from './utils/footer';
 
-(function loadHomeDefault() {
+(function loadDefault() {
+  tabs();
+  nav();
+  footer();
   switchToHome();
 }());
 (function addEventListeners() {
