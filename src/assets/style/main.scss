@@ -2,6 +2,18 @@
 
 body {
   background-color: #a5102e;
+  user-select: none;
+
+  button {
+    padding: 10px 15px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    color: #a5102e;
+    border: none;
+    border-radius: 300px;
+    outline: none;
+    overflow: hidden;
+  }
 }
 
 // Navbar styling
@@ -21,7 +33,6 @@ body {
       color: rgb(255, 244, 244);
       font-size: 70px;
       font-family: "Chewy", cursive;
-      user-select: none;
     }
   }
 }
@@ -55,8 +66,6 @@ body {
 }
 
 #content {
-  user-select: none;
-
   // home container
   .home-container {
     padding: 30px;
@@ -95,14 +104,20 @@ body {
     }
 
     button {
-      padding: 10px 15px;
-      font-family: "Rubik", sans-serif;
-      font-weight: 600;
       color: #a5102e;
+      padding: 10px 15px;
+      margin: 20px;
+      font-weight: 600;
+      font-size: 18px;
       border: none;
       border-radius: 300px;
       outline: none;
       overflow: hidden;
+      transition: all 0.8s ease-out;
+
+      &:hover {
+        transform: scale(1.15);
+      }
     }
   }
 
@@ -169,6 +184,41 @@ body {
             transform: scale(1.15);
           }
         }
+      }
+    }
+  }
+
+  // contacts container
+  .contacts-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin-bottom: 25vh;
+    font-family: "Rubik", sans-serif;
+
+    h1 {
+      font-size: 50px;
+      color: white;
+      margin-bottom: 50px;
+    }
+
+    button {
+      color: #a5102e;
+      padding: 10px 15px;
+      margin: 20px;
+      font-weight: 600;
+      font-size: 18px;
+      background-color: white;
+      border: none;
+      border-radius: 300px;
+      outline: none;
+      overflow: hidden;
+      transition: all 0.8s ease-out;
+
+      &:hover {
+        transform: scale(1.15);
       }
     }
   }

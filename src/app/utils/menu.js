@@ -12,6 +12,7 @@ export default () => {
     menuContainer.classList.add('menu-container');
     const itemsContainer = document.createElement('div');
     itemsContainer.classList.add('items-container');
+
     // create item 1
     const item1 = document.createElement('div');
     item1.classList.add('item');
@@ -53,7 +54,7 @@ export default () => {
     item3.appendChild(span3);
     item3.appendChild(button3);
 
-    //
+    // append all items
     itemsContainer.appendChild(item1);
     itemsContainer.appendChild(item2);
     itemsContainer.appendChild(item3);
