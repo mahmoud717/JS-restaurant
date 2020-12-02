@@ -6,10 +6,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.html$/,
-        use: ['html-loader'],
-      },
-      {
         test: /\.(svg|png|jpg|gif|webp)$/,
         use: {
           loader: 'file-loader',
@@ -19,6 +15,11 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.html$/,
+        use: ['html-loader'],
+      },
+
     ],
   },
 };
