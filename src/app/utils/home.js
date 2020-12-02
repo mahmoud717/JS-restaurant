@@ -4,7 +4,7 @@ import img1 from '../../assets/imgs/bigzack.png';
 export default () => {
   const mainContent = document.querySelector('main#content');
   if (!mainContent.classList.contains('home-active')) {
-    console.log('hey');
+    mainContent.className = '';
     mainContent.classList.add('home-active');
     mainContent.innerHTML = '';
     const homeContainer = document.createElement('div');
@@ -16,7 +16,7 @@ export default () => {
     const img = document.createElement('img');
     img.src = img1;
     const button = document.createElement('button');
-    button.innerHTML = 'ORDER NOW';
+    button.innerHTML = 'CHECK THE MENU';
     button.addEventListener('click', (e) => {
       e.preventDefault();
       switchToMenu();
