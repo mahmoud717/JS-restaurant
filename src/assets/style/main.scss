@@ -1,1 +1,53 @@
 @import "~bootstrap/scss/bootstrap";
+
+body {
+  background-color: #a5102e;
+}
+
+// Navbar styling
+
+.navbar {
+  background-color: #920b26;
+  height: 150px;
+  width: 100vw;
+
+  .navbar-inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      color: rgb(255, 244, 244);
+      font-size: 70px;
+      font-family: "Chewy", cursive;
+      user-select: none;
+    }
+  }
+}
+
+// Tabs styling
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  div {
+    padding: 30px 0;
+    color: white;
+    font-size: 24px;
+    font-family: "Rubik", sans-serif;
+    height: 100%;
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: #920b26;
+      box-shadow: 0 -5px 5px -5px #333;
+    }
+  }
+}
