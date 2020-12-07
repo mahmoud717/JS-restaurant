@@ -1,1 +1,235 @@
 @import "~bootstrap/scss/bootstrap";
+
+body {
+  background-color: #a5102e;
+  user-select: none;
+
+  button {
+    color: #a5102e;
+    padding: 10px 15px;
+    margin: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: white;
+    border: none;
+    border-radius: 300px;
+    outline: none;
+    overflow: hidden;
+    transition: all 0.8s ease-out;
+
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+}
+
+// Navbar styling
+
+.navbar {
+  background-color: #920b26;
+  height: 150px;
+  width: 100%;
+
+  .navbar-inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      color: rgb(255, 244, 244);
+      font-size: 70px;
+      font-family: "Chewy", cursive;
+    }
+  }
+}
+
+// Tabs styling
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  div {
+    cursor: pointer;
+    padding: 30px 0;
+    color: white;
+    font-size: 24px;
+    font-family: "Rubik", sans-serif;
+    height: 100%;
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9c0e2b;
+
+    &:hover {
+      background-color: #920b26;
+      box-shadow: 0 -5px 5px -5px #333;
+    }
+  }
+}
+
+#content {
+  // contacts container
+  .contacts-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin-bottom: 25vh;
+    font-family: "Rubik", sans-serif;
+
+    h1 {
+      font-size: 50px;
+      color: white;
+      margin-bottom: 50px;
+    }
+  }
+  // home container
+  .home-container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+
+    h1 {
+      padding-top: 25px;
+      color: white;
+      font-family: "Rubik", sans-serif;
+      font-size: 46px;
+      font-weight: 300;
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    h2 {
+      padding-top: 20px;
+      color: white;
+      font-family: "Rubik", sans-serif;
+      font-size: 30px;
+      font-weight: 300;
+
+      span {
+        font-weight: 500;
+      }
+    }
+
+    img {
+      width: 25%;
+    }
+
+    button {
+      color: #a5102e;
+      padding: 10px 15px;
+      margin: 20px;
+      font-weight: 600;
+      font-size: 18px;
+      border: none;
+      border-radius: 300px;
+      outline: none;
+      overflow: hidden;
+      transition: all 0.8s ease-out;
+
+      &:hover {
+        transform: scale(1.15);
+      }
+    }
+  }
+
+  // menu container
+  .menu-container {
+    padding: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+    width: 100%;
+
+    .items-container {
+      padding: 40px 80px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .item {
+        background-color: rgb(250, 250, 250);
+        border: 1px solid rgb(236, 236, 236);
+        border-radius: 5px;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Rubik", sans-serif;
+        padding: 10px 0;
+        transition: all 0.8s ease-out;
+
+        &:hover {
+          transform: scale(1.15);
+        }
+
+        img {
+          width: 100%;
+          padding-bottom: 10px;
+        }
+
+        span {
+          font-size: 24px;
+          font-weight: 500;
+        }
+
+        button {
+          color: white;
+          padding: 10px 15px;
+          margin: 20px;
+          font-weight: 600;
+          font-size: 18px;
+          background-color: #a5102e;
+          border: none;
+          border-radius: 300px;
+          outline: none;
+          overflow: hidden;
+          transition: all 0.8s ease-out;
+
+          &:hover {
+            transform: scale(1.15);
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  color: #8d0e27;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  background-color: white;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    padding-left: 5px;
+    color: #d4173d;
+
+    &:hover {
+      color: #d4173d;
+      text-decoration: none;
+    }
+  }
+}
